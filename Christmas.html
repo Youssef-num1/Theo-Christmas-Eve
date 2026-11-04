@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coming Soon - Fully Colored Pages</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    overflow-x: hidden;
+
+    background:
+    radial-gradient(circle at 10% 10%, #ffe66d 0%, transparent 30%),
+    radial-gradient(circle at 90% 15%, #ff8fab 0%, transparent 30%),
+    radial-gradient(circle at 15% 90%, #80edff 0%, transparent 30%),
+    radial-gradient(circle at 90% 90%, #c8ff80 0%, transparent 30%),
+    linear-gradient(135deg, #fff5e8, #f4eaff);
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    padding: 45px 25px;
+    background: rgba(255,255,255,0.88);
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(70,40,100,0.15);
+    border: 2px solid rgba(255,255,255,0.9);
+}
+
+h1 {
+    font-size: clamp(32px, 7vw, 65px);
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #ff4d6d,
+        #ff9f1c,
+        #8ac926,
+        #1982c4,
+        #9b5de5
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    font-size: clamp(18px, 4vw, 25px);
+    color: #55416b;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.book-image {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 30px;
+    filter: drop-shadow(0 15px 18px rgba(0,0,0,0.18));
+}
+
+.coming {
+    display: inline-block;
+    padding: 16px 35px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #ff4d6d, #9b5de5);
+    color: white;
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(155,93,229,0.3);
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #81758e;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 35px 18px;
+    }
+
+    .book-image {
+        max-width: 290px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>
+        FULLY COLORED
+        PAGES
+    </h1>
+
+    <p class="subtitle">
+        Get Ready for a World of Beautiful Colors!
+    </p>
+
+    <!-- Replace book.png with your book image filename -->
+    <img
+        src="book.png"
+        alt="Our Coloring Book"
+        class="book-image"
+    >
+
+    <div class="coming">
+        COMING SOON!
+    </div>
+
+    <p class="footer">
+        A Beautiful New Coloring Experience Is On Its Way!
+    </p>
+
+</div>
+
+</body>
+</html>
